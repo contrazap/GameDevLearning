@@ -13,11 +13,11 @@ Shared rules for all plans and sessions. The plan generator reads this file — 
 ## Repos & filesystem
 
 1. **Two kinds of repo.** This planning repo (text only, **no LFS**) and one repo **per UE project**. Never nest: no UE project inside this repo, no `.git` inside a project other than its own.
-2. **Projects parent folder — single source of truth:** `C:\MyFiles\Projects\GDL\`. Short on purpose: UE + Windows path-length limits bite in `Intermediate/` and Android builds. Plans and notes reference project files as `A1_Flappy/Source/...` — always relative to this parent.
+2. **Projects parent folder — single source of truth:** `C:\MyFiles\Projects\GameDevLearningPractice\` (created 2026-07-17). Plans and notes reference project files as `A1_Flappy/Source/...` — always relative to this parent. Path-length watch: UE + Windows limits bite in `Intermediate/` and Android gradle builds; if A2.4's packaging hits path errors, the fixes are enabling Windows long paths or shortening this parent — a logged decision, not a silent move.
 3. **Per-project repo contract (S0 ritual):** created from [templates/](templates/) — `.gitignore`, `.gitattributes` (LFS routing), `.clang-format`, `ASSETS.md` at the project repo root. Verified with `git check-ignore` + `git add -n` before the first commit.
 4. **Clone = resume.** Everything the project needs to open and play is committed to its repo: authored work *and* imported asset copies (binaries via LFS). Asset sources (Fab library, zips, Quixel) stay outside all repos.
 5. **Import lean.** When adding a marketplace/Fab pack, migrate only the folders the project actually uses. Keeps repos, LFS quota, and editor load times sane. Each import gets one line in the project's `ASSETS.md` (source, version, license, folders taken).
-6. **LFS quota is per GitHub account, not per repo.** Splitting repos bounds repo *size*, not quota. Expect to need a paid LFS data pack around Stage B–C; the check lives in S0.
+6. **LFS quota is per GitHub account, not per repo.** Splitting repos bounds repo *size*, not quota. Measured 2026-07-17: the free plan includes **10 GB LFS storage + 10 GB/month bandwidth** (0.3 GB storage pre-used by older repos). With import-lean discipline that lasts deep into the ladder — revisit (data pack or pruning) when storage crosses ~7 GB; Claude flags it when heavy imports land.
 7. **Git is [You], always.** Claude never commits or pushes. Recommended minimum: commit at each session close, push both repos at each feature close — the clone-anywhere property depends on it.
 8. **Sessions run beside both folders.** Work from the project folder or from this repo; the other side is reached by absolute path. Claude updates plans/KN notes here and code there in the same session.
 

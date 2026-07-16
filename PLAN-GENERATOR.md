@@ -1,6 +1,6 @@
 # Plan Generator
 
-Reusable instruction set. One invocation generates **one** feature document into `features/` — a guided plan, a how-to plan, or a user story, **decided by rep counts**, not by request. Run it in a Claude Code session that can see this repo and the projects parent folder (`C:\MyFiles\Projects\GDL\`) — real code beats assumptions.
+Reusable instruction set. One invocation generates **one** feature document into `features/` — a guided plan, a how-to plan, or a user story, **decided by rep counts**, not by request. Run it in a Claude Code session that can see this repo and the projects parent folder (`C:\MyFiles\Projects\GameDevLearningPractice\`) — real code beats assumptions.
 
 **Format principles (inherited from GameDevPractice 2026-07-12, extended 2026-07-17):**
 1. **Teaching lives at the point of use.** One document per feature. No separate primers — separated teaching decays before use. In story mode the "primer" shrinks to named concepts + references inside the story.

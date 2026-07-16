@@ -2,7 +2,7 @@
 
 The planning repo for a **fundamentals-first, single-player** game development learning path in **UE 5.8 + Blender**. One hour every weekday morning; no calendar deadlines — progression is completion-gated. Created 2026-07-17.
 
-This repo holds the roadmap, plans, knowledge notes, and templates — **text only, no LFS**. The UE projects themselves live outside it, one folder + one GitHub repo per project (parent folder defined in [CONVENTIONS.md](CONVENTIONS.md); default `C:\MyFiles\Projects\GDL\`). During sessions this repo stays checked out beside the active project so plans and notes are updated in place.
+This repo holds the roadmap, plans, knowledge notes, and templates — **text only, no LFS**. The UE projects themselves live outside it, one folder + one GitHub repo per project (parent folder defined in [CONVENTIONS.md](CONVENTIONS.md): `C:\MyFiles\Projects\GameDevLearningPractice\`). During sessions this repo stays checked out beside the active project so plans and notes are updated in place.
 
 **The goal:** after finishing the ladder, be able to take up any of the 18 reference games ([SKILL-MATRIX.md](SKILL-MATRIX.md)) as a clone project *without a step-by-step plan* — i.e. operate permanently in what this repo calls story mode.
 
@@ -30,7 +30,7 @@ This repo holds the roadmap, plans, knowledge notes, and templates — **text on
 | [knowledge/](knowledge/) | Personal wiki — one note per finished feature (closed via the from-memory ritual). |
 | [templates/](templates/) | `.gitignore` / `.gitattributes` / `.clang-format` / `ASSETS.md` — copied into each new UE project repo (S0 ritual), so nothing is hunted from other repos. |
 
-**Where the UE projects live:** `C:\MyFiles\Projects\GDL\<ProjectFolder>\` — a deliberately short parent path (UE + Windows path-length limits bite in `Intermediate/` and Android builds). Each project is its own GitHub repo named after its folder (`A1_Flappy`, `A2_Clicker`, …). Morning sessions run in either the project folder or this repo; the other side is reached by absolute path.
+**Where the UE projects live:** `C:\MyFiles\Projects\GameDevLearningPractice\<ProjectFolder>\`. Each project is its own GitHub repo named after its folder (`A1_Flappy`, `A2_Clicker`, …). Morning sessions run in either the project folder or this repo; the other side is reached by absolute path.
 
 ## The loop (per feature)
 

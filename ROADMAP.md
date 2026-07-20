@@ -12,7 +12,7 @@ Estimates are in **1-hour sessions** (Claude-assisted pace). 📱 = the project 
 
 ## S0 — Setup — [features/S0-repos-and-spinup.md](features/S0-repos-and-spinup.md)
 
-- ⬜ **S0.1** Planning repo on GitHub + the per-project spin-up ritual (templates, verification, first dry run) (1–2)
+- ✅ **S0.1** Planning repo on GitHub + the per-project spin-up ritual (templates, verification, first dry run) (1–2)
 
 ## Stage A — Engine foundations (Blueprint, placeholder art) — [projects/A1-flappy.md](projects/A1-flappy.md) · [A2](projects/A2-clicker.md) · [A3](projects/A3-chess.md)
 

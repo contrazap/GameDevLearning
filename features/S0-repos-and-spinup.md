@@ -3,7 +3,7 @@ id: S0.1
 title: Repos & the project spin-up ritual
 project: S0
 mode: howto
-status: ready
+status: done
 skills: [project-spinup(rep 2→howto)]
 est_sessions: 1-2
 mobile: no
@@ -11,7 +11,7 @@ mobile: no
 
 # S0.1 — Repos & the project spin-up ritual
 
-**Next action:** Part 1, steps 1–2 — create the `GameDevLearning` repo on GitHub and push this folder. (Steps 3–4 ✅ 2026-07-17: quota recorded, parent folder created.) Then Part 2 for `A1_Flappy` opens the first morning session.
+**Next action:** none — S0.1 closed 2026-07-20 (all DoD ✅). This file is now the Part 2 checklist for future spin-ups; knowledge delta in `knowledge/KN-repo-spinup.md`. Next feature: A1.1 in `A1_Flappy`.
 
 **How-to grade** — you built this pattern once in GameDevPractice P0.1 (`C:\MyFiles\Projects\GameDevPractice\knowledge\KN-project-source-control.md` is the allowed reference). Commands are listed as reference, not as blind steps: know what each does before running it. All git commands are [You] — always (CONVENTIONS repo rule 7).
 
@@ -71,17 +71,17 @@ Shown for `A1_Flappy`; substitute per project brief (folder name, template).
 
 ## Definition of Done
 
-- [ ] Planning repo live on GitHub, pushed from this folder
+- [x] Planning repo live on GitHub, pushed from this folder (verified in sync 2026-07-20)
 - [x] LFS quota numbers recorded (10 GB storage / 10 GB/mo bandwidth included; 0.3 GB pre-used); data-pack trigger set at ~7 GB storage
 - [x] `C:\MyFiles\Projects\GameDevLearningPractice\` exists (2026-07-17)
-- [ ] Ritual executed once end-to-end (A1_Flappy — its project can then start A1.1 immediately)
-- [ ] Knowledge note: **update** GameDevPractice's source-control knowledge into `knowledge/KN-repo-spinup.md` here — what changed (per-project repos, commit-all-content policy) and why
-- [ ] ROADMAP S0.1 → ✅
+- [x] Ritual executed once end-to-end (A1_Flappy, 2026-07-20 — its project can start A1.1 immediately)
+- [x] Knowledge note: **update** GameDevPractice's source-control knowledge into `knowledge/KN-repo-spinup.md` here — what changed (per-project repos, commit-all-content policy) and why (2026-07-20, Claude-drafted delta note, user-approved)
+- [x] ROADMAP S0.1 → ✅ (2026-07-20)
 
 ## ⚠️ Verify list
 
 - ~~**Current LFS quota/pricing**~~ — resolved 2026-07-17 (step 3): 10 GB storage + 10 GB/mo bandwidth included on the free plan; 0.3 GB pre-used.
-- **UE 5.8 new-project dialog** — confirm it accepts `C:\MyFiles\Projects\GameDevLearningPractice` as Location and creates the named subfolder (expected; verify on first use).
+- ~~**UE 5.8 new-project dialog**~~ — resolved 2026-07-20: accepted `C:\MyFiles\Projects\GameDevLearningPractice` as Location and created the `A1_Flappy` subfolder as expected.
 - **Path length under the longer parent** — the folder name adds ~17 chars over the original suggestion; deep paths (`Intermediate/`, Android gradle) may near Windows limits. Watch at first C++ build (A3.3) and first Android package (A2.4); fixes if hit: enable Windows long paths or shorten the parent (logged decision).
 - **`git check-ignore` on dirs that don't exist yet** returns nothing — only check dirs the editor has actually generated.
 - **BP-only projects have no `Source/`** — expected; it appears when the project converts to C++ (A3.3).
@@ -93,3 +93,11 @@ Shown for `A1_Flappy`; substitute per project brief (folder name, template).
 **2026-07-17 — pre-session bookkeeping (steps 3–4 ✅).** User provided the GitHub billing screenshot: GitHub Free, Git LFS **10 GB storage + 10 GB/month bandwidth included** (metered model, monthly reset), **0.3 GB storage used** by `CrystalCavern_GameDevTv` + `GameDevPractice`, $0 billable. Data-pack trigger recast from "first heavy import" to **storage ~7 GB** — far looser than planned thanks to the 10 GB allowance.
 - *Decision:* projects parent folder created by user as **`C:\MyFiles\Projects\GameDevLearningPractice\`** (supersedes the `GDL` suggestion). All plan files updated (CONVENTIONS rule 2, README, PLAN-GENERATOR, this file). Path-length consequence logged as a Verify item (watch A3.3 / A2.4).
 - *Remaining:* Part 1 steps 1–2 (create + push planning repo); Part 2 runs in the first morning session (user will confirm).
+
+**2026-07-20 — Part 2 ritual executed end-to-end for A1_Flappy ✅.** UE 5.8 Blank (Blueprint) project created at the correct location, Starter Content off, no `Source/` (BP-only, as expected). `git check-ignore -v` printed rules for all three generated dirs; bootstrap commit `3aa665c` held exactly 9 files (uproject + 4 Config inis + 4 template files), nothing leaked from ignored dirs; pushed to `github.com/contrazap/A1_Flappy`, `main` tracking `origin/main`.
+- *LFS sanity resolved:* `git lfs ls-files` was empty — verified **expected**, not a failure: `Content/` holds zero files (empty dirs only; git doesn't track them, hence no `Content/` in the commit either). Routing proven instead via `git check-attr` — `.uasset`/`.umap` → `filter: lfs`. Real end-to-end proof lands with the first map save in A1.1: glance at `git lfs ls-files` after that commit.
+- *Detour:* GitHub repo initially created as `GDLPractice_A1_Flappy`; user deleted and recreated as `A1_Flappy` per CONVENTIONS rule 2, fixed origin with `git remote set-url` (learned: `remote add` fails on an existing name; `set-url` rewrites it).
+- *Also:* dry-run step ran as `git add -n` (no pathspec → no-op); commit file list served as the same verification. CRLF warnings on template files are harmless Windows line-ending normalization. Part 1 confirmed pushed and in sync (done earlier, commit "github repo setup done for plan repo").
+- *Remaining for S0.1 close:* `knowledge/KN-repo-spinup.md`, then ROADMAP tick.
+
+**2026-07-20 — S0.1 closed ✅.** `knowledge/KN-repo-spinup.md` written (delta note vs GameDevPractice's KN-project-source-control; Claude-drafted as user-approved bookkeeping — the from-memory ritual resumes with A1 feature notes). ROADMAP S0.1 → ✅, frontmatter `status: done`. Real `Had to look up:` items recorded from the session: `git remote set-url`, `git add -n` pathspec. Planning-repo commit + push remain [You] at session close.

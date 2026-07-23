@@ -17,7 +17,7 @@ Estimates are in **1-hour sessions** (Claude-assisted pace). 📱 = the project 
 ## Stage A — Engine foundations (Blueprint, placeholder art) — [projects/A1-flappy.md](projects/A1-flappy.md) · [A2](projects/A2-clicker.md) · [A3](projects/A3-chess.md)
 
 **A1 — Flappy** (Flappy Bird · Windows · 8)
-- ⬜ **A1.1** Project bootstrap & flap core: pawn, Enhanced Input, gravity impulse, collision death (3)
+- 📋 **A1.1** Project bootstrap & flap core: pawn, Enhanced Input, gravity impulse, collision death (3)
 - ⬜ **A1.2** Pipes, scoring & game flow: spawner, overlap scoring, start/death/restart states (3)
 - ⬜ **A1.3** UI, save & first package: UMG HUD + menus, high-score SaveGame, packaged Windows build (2)
 

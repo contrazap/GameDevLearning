@@ -1,6 +1,6 @@
 # B1 — Runner 📱
 
-**Folder/repo:** `B1_Runner` · **Clone of:** Subway Surfers · **Platforms:** Windows + Android · **Est:** 14 sessions · **Blender:** yes (B1.4 — first Blender feature) · **UE template:** Third Person (Blueprint)
+**Folder/repo:** `B1_Runner` · **Clone of:** Subway Surfers · **Platforms:** Linux + Android · **Est:** 14 sessions · **Blender:** yes (B1.4 — first Blender feature) · **UE template:** Third Person (Blueprint)
 
 **Why this project:** the bridge into 3D — a real character, a chase camera, and the spawn/recycle/pool pattern that later scales into hordes (D3) and waves (E4). First appearance of the Blender pipeline, feeding assets into a live game instead of abstract exercises. The Third Person template is used deliberately: its mannequin + anims keep the focus on systems, not animation authoring (that's C1).
 

@@ -1,6 +1,6 @@
 # A2 — Clicker 📱
 
-**Folder/repo:** `A2_Clicker` · **Clone of:** Cookie Clicker · **Platforms:** Windows + Android · **Est:** 10 sessions · **Blender:** none · **UE template:** Blank (Blueprint)
+**Folder/repo:** `A2_Clicker` · **Clone of:** Cookie Clicker · **Platforms:** Linux + Android · **Est:** 10 sessions · **Blender:** none · **UE template:** Blank (Blueprint)
 
 **Why this project:** a UI-first game that forces UMG depth, data-driven design, and real persistence — and it is the ideal first Android ship (no 3D perf risk, touch input is trivial). Idle economies also teach the timer/timestamp patterns HayDay (D1) later builds on.
 

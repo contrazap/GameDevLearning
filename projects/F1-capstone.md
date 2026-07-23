@@ -1,6 +1,6 @@
 # F1 — Capstone
 
-**Folder/repo:** `F1_<Title>` (named at F1.1) · **Clone of:** your pick of the 18 · **Platform:** Windows (+📱 if the title fits) · **Est:** 20 sessions · **Everything:** story mode
+**Folder/repo:** `F1_<Title>` (named at F1.1) · **Clone of:** your pick of the 18 · **Platform:** Linux (+📱 if the title fits) · **Est:** 20 sessions · **Everything:** story mode
 
 **Why this project:** the graduation exam. One reference game, cloned properly as a vertical slice — the first 10 minutes that *feel like that game*, shipped. **Every feature runs in story mode**: requirements and acceptance criteria only, no steps, no Teach blocks except a genuine first-encounter island if the title demands one (it shouldn't — pick a title the ladder covered). Claude is consultant (escalation ladder) and reviewer, nothing more. Passing this = the roadmap's goal achieved: you can take up any of the clones on your own.
 

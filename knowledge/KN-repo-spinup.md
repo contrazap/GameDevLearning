@@ -19,7 +19,7 @@ date: 2026-07-20
 2. `git init -b main`, copy the four templates from `templates/` — **copies, never links** (template improvements propagate to existing projects only as a deliberate act).
 3. Verify **before** first add: `git check-ignore -v Intermediate Saved DerivedDataCache` (a rule per existing dir) and `git add -n .` (dry run — expect uproject, Config/, Content/, the four files, nothing ignored).
 4. `git add . && git commit` → create empty GitHub repo → `git remote add origin …` → `git push -u origin main`.
-5. LFS sanity: `git lfs ls-files` — and if the project has zero assets yet, prove routing with `git check-attr filter diff merge -- Content/X.uasset` (expect `filter: lfs`).
+5. LFS sanity: `git lfs ls-files` — and if the project has zero assets yet, prove routing with `git check-attr filter diff merge -- Content/X.uasset` (expect `filter: lfs`). Also confirm `.git/hooks/pre-push` exists — see the no-hooks gotcha below.
 
 ## What changed vs GameDevPractice, and why
 
@@ -34,7 +34,7 @@ date: 2026-07-20
 - **Git doesn't track empty dirs** — hence no `Content/` in the bootstrap commit; it appears with the first saved asset. (P0.1 used `.gitkeep`; this ladder just lets `Content/` arrive naturally.)
 - **`git remote add` on an existing name errors** (`remote origin already exists`) — fix the URL with `git remote set-url origin <url>` instead. Hit during the repo-rename detour (repo first created as `GDLPractice_A1_Flappy`, recreated as `A1_Flappy` per CONVENTIONS naming).
 - **`git add -n` without a pathspec is a no-op** — the dry run is `git add -n .`.
-- **CRLF warnings on the copied templates** ("LF will be replaced by CRLF") are harmless Windows line-ending normalization — not a corruption signal.
+- **A repo cloned before the machine's `git lfs install` has no LFS hooks — and the failure is silent.** *(S0.2 delta, 2026-07-24, first Arch-box encounter.)* Machine-wide `git lfs install` sets global *filters* but does not retrofit hooks into repos that already exist: commits still become pointers, `git lfs env` looks clean — but without `.git/hooks/pre-push` a push uploads pointers and never the binary objects. GitHub ends up holding pointers-to-nothing, and the break surfaces at the *next clone*, not at push time — exactly the clone-=-resume property this ritual exists to protect. Fix: run `git lfs install` *inside* each repo cloned before git-lfs landed on the machine; proof is `.git/hooks/pre-push` existing (step 5 amended). Applies to every machine migration. ("LF will be replaced by CRLF") are harmless Windows line-ending normalization — not a corruption signal. *(Obsolete from 2026-07-23: the ladder moved to Linux, where the copies stay LF and this warning never appears. Kept because the reasoning — a filter warning is not corruption — is the transferable part.)*
 
 ## Would do differently
 
@@ -45,7 +45,7 @@ date: 2026-07-20
 
 - Feature plan + session log: [features/S0-repos-and-spinup.md](../features/S0-repos-and-spinup.md)
 - Templates: [templates/](../templates/) · Repo rules: [CONVENTIONS.md §Repos & filesystem](../CONVENTIONS.md)
-- Predecessor note (Target/Module, LFS verify commands, secrets pattern): `C:\MyFiles\Projects\GameDevPractice\knowledge\KN-project-source-control.md`
+- Predecessor note (Target/Module, LFS verify commands, secrets pattern): `knowledge/KN-project-source-control.md` in `github.com/contrazap/GameDevPractice` (local Windows copy did not migrate — clone to read)
 - Next encounter: A2's spin-up (rep 3) — should run from memory with the feature file as checklist only.
 
 ## Had to look up

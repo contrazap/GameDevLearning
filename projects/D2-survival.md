@@ -1,6 +1,6 @@
 # D2 — Survival
 
-**Folder/repo:** `D2_Survival` · **Clone of:** Don't Starve Together (3D topdown) + Project Zomboid · **Platform:** Windows · **Est:** 20 sessions · **Blender:** props as needed (→ story) · **UE template:** Top Down or Third Person (C++) — decide at planning
+**Folder/repo:** `D2_Survival` · **Clone of:** Don't Starve Together (3D topdown) + Project Zomboid · **Platform:** Linux · **Est:** 20 sessions · **Blender:** props as needed (→ story) · **UE template:** Top Down or Third Person (C++) — decide at planning
 
 **Why this project:** the systems-integration boss fight of the ladder — inventory, crafting, needs, time-of-day, and spawn direction all *interlocking*, then the deepest save/load of the roadmap persisting it all. Individually most threads arrive as stories; the integration is the new skill.
 

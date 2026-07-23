@@ -1,6 +1,6 @@
 # C2 — Souls arena
 
-**Folder/repo:** `C2_SoulsArena` · **Clone of:** Dark Souls 2 (combat loop) · **Platform:** Windows · **Est:** 20 sessions · **Blender:** yes (C2.5) · **UE template:** Third Person (C++)
+**Folder/repo:** `C2_SoulsArena` · **Clone of:** Dark Souls 2 (combat loop) · **Platform:** Linux · **Est:** 20 sessions · **Blender:** yes (C2.5) · **UE template:** Third Person (C++)
 
 **Why this project:** the melee-combat and enemy-AI first encounters, on top of C1's movement/animation base (character setup and AnimBP arrive as how-to/story — the rep design in action). The souls loop is chosen because it demands *systemic honesty*: stamina, i-frames, and AI turn-taking can't be faked with animation flash.
 

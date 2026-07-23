@@ -5,9 +5,8 @@
       "url": "http://127.0.0.1:8000/mcp"
     },
     "blender": {
-      "command": "cmd",
+      "command": "uvx",
       "args": [
-        "/c", "uvx",
         "--from", "git+https://projects.blender.org/lab/blender_mcp.git#subdirectory=mcp",
         "blender-mcp"
       ]

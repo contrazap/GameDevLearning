@@ -1,6 +1,6 @@
 # E4 — MicroRTS
 
-**Folder/repo:** `E4_MicroRTS` · **Clone of:** Age of Empires · **Platform:** Windows · **Est:** 18 sessions · **Blender:** none required (free low-poly packs fit) · **UE template:** Top Down (C++)
+**Folder/repo:** `E4_MicroRTS` · **Clone of:** Age of Empires · **Platform:** Linux · **Est:** 18 sessions · **Blender:** none required (free low-poly packs fit) · **UE template:** Top Down (C++)
 
 **Why this project:** the ladder's integration finale before the capstone — many-entity control, pathing at scale, economy, and fog of war, composed. RTS code is where the C++/data-driven/AI threads prove they've compounded: most arrives as stories.
 

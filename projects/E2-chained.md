@@ -1,6 +1,6 @@
 # E2 — Chained
 
-**Folder/repo:** `E2_Chained` · **Clone of:** Chained Together (solo variant) · **Platform:** Windows · **Est:** 8 sessions · **Blender:** none required · **UE template:** Third Person (C++)
+**Folder/repo:** `E2_Chained` · **Clone of:** Chained Together (solo variant) · **Platform:** Linux · **Est:** 8 sessions · **Blender:** none required · **UE template:** Third Person (C++)
 
 **Why this project:** constraint physics under continuous player stress — a chain that must *never* explode while being yanked, swung, and snagged. The original's player-to-player chain is a multiplayer mechanic; the solo variant (player chained to a heavy companion object) keeps every physics lesson and stays in scope. Short project by design: Stage E's breather that still adds a thread rep.
 

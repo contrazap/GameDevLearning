@@ -1,6 +1,6 @@
 # D1 — Farm 📱
 
-**Folder/repo:** `D1_Farm` · **Clone of:** HayDay · **Platforms:** Android-first (+ Windows) · **Est:** 12 sessions · **Blender:** props as needed (→ story) · **UE template:** Blank (C++ where systems warrant)
+**Folder/repo:** `D1_Farm` · **Clone of:** HayDay · **Platforms:** Android-first (+ Linux) · **Est:** 12 sessions · **Blender:** props as needed (→ story) · **UE template:** Blank (C++ where systems warrant)
 
 **Why this project:** the economy-simulation threads (timers, production chains, soft currency) at mobile scale — and the first Stage D project on purpose: after C-stage intensity, most of D1 arrives as how-to/story, proving the fade works. HayDay's craft is *pacing* — everything is a timer whose length is a design decision.
 

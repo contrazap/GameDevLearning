@@ -1,6 +1,6 @@
 # B2 — Wordscape 📱
 
-**Folder/repo:** `B2_Wordscape` · **Clone of:** Words of Wonders · **Platforms:** Android-first (+ Windows) · **Est:** 8 sessions · **Blender:** none · **UE template:** Blank (Blueprint)
+**Folder/repo:** `B2_Wordscape` · **Clone of:** Words of Wonders · **Platforms:** Android-first (+ Linux) · **Est:** 8 sessions · **Blender:** none · **UE template:** Blank (Blueprint)
 
 **Why this project:** a pure mobile-UI game as the consolidation project for the UI/data/touch/save threads before Stage C's big 3D climb — most of it should already arrive in how-to or story mode. Portrait orientation, finger-first design throughout.
 

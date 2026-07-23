@@ -1,6 +1,6 @@
 # C3 — StealthOps
 
-**Folder/repo:** `C3_StealthOps` · **Clone of:** Project IGI + GTFO (solo) + PUBG gunplay · **Platform:** Windows · **Est:** 18 sessions · **Blender:** props as needed (→ story) · **UE template:** First Person (C++)
+**Folder/repo:** `C3_StealthOps` · **Clone of:** Project IGI + GTFO (solo) + PUBG gunplay · **Platform:** Linux · **Est:** 18 sessions · **Blender:** props as needed (→ story) · **UE template:** First Person (C++)
 
 **Why this project:** ranged combat and *stateful* stealth AI — the other half of action-game literacy. GTFO contributes the darkness/scarcity/objective pressure (its coop is excluded — multiplayer roadmap); IGI the patrol-stealth loop; PUBG the weapon-handling discipline (ADS, ammo scarcity, recoil control).
 

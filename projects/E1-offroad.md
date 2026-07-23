@@ -1,6 +1,6 @@
 # E1 — Offroad
 
-**Folder/repo:** `E1_Offroad` · **Clone of:** SnowRunner · **Platform:** Windows · **Est:** 16 sessions · **Blender:** attachments/props (→ story) · **UE template:** Vehicle or Third Person (C++) — decide at planning against 5.8's vehicle template state
+**Folder/repo:** `E1_Offroad` · **Clone of:** SnowRunner · **Platform:** Linux · **Est:** 16 sessions · **Blender:** attachments/props (→ story) · **UE template:** Vehicle or Third Person (C++) — decide at planning against 5.8's vehicle template state
 
 **Why this project:** physics as the gameplay — Chaos Vehicles, terrain that punishes, and constraint-based tools (winch). SnowRunner's genius is that *the map is the enemy*; that needs real landscape skills, which also open Stage E's world-building thread.
 

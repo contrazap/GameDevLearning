@@ -1,6 +1,6 @@
 # C1 — Traversal
 
-**Folder/repo:** `C1_Traversal` · **Clone of:** Prince of Persia: Warrior Within (traversal half) · **Platform:** Windows · **Est:** 20 sessions · **Blender:** yes (C1.5) · **UE template:** Third Person (**C++**)
+**Folder/repo:** `C1_Traversal` · **Clone of:** Prince of Persia: Warrior Within (traversal half) · **Platform:** Linux · **Est:** 20 sessions · **Blender:** yes (C1.5) · **UE template:** Third Person (**C++**)
 
 **Why this project:** Stage C's foundation — movement feel and the animation pipeline are the two deepest first-encounters left, and everything after (souls combat, FPS, top-down games) stands on them. From here, **C++ is the default for systems** (CONVENTIONS rule 3): the character and its movement logic live in C++, Blueprint holds assets and tuning. Combat is deliberately absent — it gets its own project (C2).
 

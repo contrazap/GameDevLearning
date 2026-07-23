@@ -1,6 +1,6 @@
 # E3 — Expanse
 
-**Folder/repo:** `E3_Expanse` · **Clone of:** the Star Citizen notes — landmark navigation + control-mode abstraction · **Platform:** Windows · **Est:** 14 sessions · **Blender:** landmark props (→ story) · **UE template:** Blank or Flying (C++) — decide at planning
+**Folder/repo:** `E3_Expanse` · **Clone of:** the Star Citizen notes — landmark navigation + control-mode abstraction · **Platform:** Linux · **Est:** 14 sessions · **Blender:** landmark props (→ story) · **UE template:** Blank or Flying (C++) — decide at planning
 
 **Why this project:** your two explicit Star Citizen asks, made buildable: (1) *"make the world's areas have recognizable patterns, to find places, quests etc."* — that's landmark-driven world design plus streaming to hold a big space; (2) *simple/complex/automated control systems* — a control-mode abstraction over a flight pawn. No space-sim scope creep: one large zone, one flyable craft, quest-lite tasks.
 
